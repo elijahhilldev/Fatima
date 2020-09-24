@@ -1,0 +1,196 @@
+
+a {
+	color: black;
+	text-decoration: none;
+	transition: all 0.25s ease;
+}
+a:hover {
+	opacity: 1 !important;
+}
+.is-active {
+	text-decoration: underline;
+	opacity: 1 !important;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+.logo {
+	width: 100px;
+	height: 45px;
+	display: inline-block;
+	flex: 1 1 auto;
+}
+.navigation {
+	display: flex;
+	flex: 1 1 auto;
+	width: 100%;
+}
+.menu {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.menu:hover a {
+	opacity: 0.4;
+}
+.menu li {
+	display: inline-block;
+	margin: 15px 10px;
+}
+.booking-button-text {
+	border-bottom: 1px solid #000;
+	padding: 10px 30px;
+	background: #d6d6d6;
+}
+.booking-button-text:hover {
+	background-color: #000;
+	text-decoration: none;
+	color: #fff;
+}
+.container {
+	width: 99%;
+	margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: futura-pt, sans-serif;
+	background-color: #fff;
+	margin: 0;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url('images/dinningwithwhiteplates.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('images/clearglasscenterpiece.jpg') no-repeat
+    center top/cover; height:relative;
+}
+.slide:nth-child(3) {
+  background: url('images/downtheaisle.jpg') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(4)  {
+  background: url('images/focuswineglasses.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(5)  {
+  background: url('images/formaldinnertable.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(6)  {
+  background: url('images/kissingforehead.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(7)  {
+  background: url('images/openvenue.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(8)  {
+  background: url('images/tablearrangement.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(9)  {
+  background: url('images/treeoutdoorseating.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(10)  {
+  background: url('images/weddingtables.jpg') no-repeat
+    center center/cover;
+}
